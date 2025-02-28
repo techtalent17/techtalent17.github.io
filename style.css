@@ -1,40 +1,165 @@
+/* General Styles */
 body {
-   font-family: Arial, sans-serif;
+   font-family: 'Poppins', sans-serif;
    margin: 0;
    padding: 0;
-   background-color: #f4f4f4;
+   background-color: #f9f9f9;
+   color: #333;
    text-align: center;
 }
 
+/* Header */
 header {
-   background: #333;
+   background: linear-gradient(135deg, #333, #555);
    color: white;
-   padding: 1rem;
+   padding: 1.5rem 0;
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   z-index: 1000;
+   transition: all 0.3s ease-in-out;
+}
+
+header.sticky {
+   background: rgba(51, 51, 51, 0.9);
+   backdrop-filter: blur(5px);
 }
 
 nav ul {
    list-style: none;
    padding: 0;
+   margin: 0;
 }
 
 nav ul li {
    display: inline;
-   margin: 0 15px;
+   margin: 0 20px;
 }
 
 nav ul li a {
    color: white;
    text-decoration: none;
+   font-weight: bold;
+   font-size: 18px;
+   transition: color 0.3s ease-in-out;
 }
 
+nav ul li a:hover {
+   color: #FFD700;
+}
+
+/* Sections */
 section {
-   padding: 50px 20px;
+   padding: 80px 20px;
+   max-width: 900px;
+   margin: 100px auto;
+   background: white;
+   border-radius: 10px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+   font-size: 2rem;
+   margin-bottom: 20px;
+   color: #222;
+}
+
+p {
+   font-size: 1.1rem;
+   line-height: 1.6;
+}
+
+/* Skill Progress Bar */
+.skills {
+   text-align: left;
+   max-width: 600px;
+   margin: auto;
+}
+
+.skill {
+   margin: 15px 0;
+}
+
+.progress-bar {
+   background: #ddd;
+   height: 10px;
+   border-radius: 5px;
+   overflow: hidden;
+   position: relative;
+}
+
+.progress {
+   height: 100%;
+   background: linear-gradient(135deg, #0066ff, #0099ff);
+   text-align: right;
+   padding-right: 5px;
+   color: white;
+   font-size: 14px;
+   font-weight: bold;
+   line-height: 10px;
+}
+
+/* Contact Form */
+form {
+   max-width: 500px;
+   margin: auto;
+}
+
+input, textarea {
+   width: 100%;
+   padding: 10px;
+   margin: 10px 0;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   font-size: 16px;
 }
 
 button {
-   padding: 10px 20px;
-   background: blue;
+   padding: 12px 20px;
+   background: linear-gradient(135deg, #0066ff, #0099ff);
    color: white;
    border: none;
+   border-radius: 5px;
    cursor: pointer;
+   font-size: 16px;
+   font-weight: bold;
+   transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+   background: linear-gradient(135deg, #0044cc, #0077cc);
+}
+
+/* Scroll-up Button */
+#scroll-up {
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   background: #333;
+   color: white;
+   padding: 10px 15px;
+   border-radius: 50%;
+   font-size: 20px;
+   cursor: pointer;
+   display: none;
+   transition: all 0.3s ease-in-out;
+}
+
+#scroll-up.show {
+   display: block;
+}
+
+#scroll-up:hover {
+   background: #FFD700;
+   color: black;
+}
+
+/* Footer */
+footer {
+   background: #222;
+   color: white;
+   padding: 20px;
+   margin-top: 50px;
+   font-size: 14px;
 }
