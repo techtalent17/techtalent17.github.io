@@ -1,208 +1,129 @@
 /* General Styles */
 body {
-   font-family: 'Poppins', sans-serif;
-   margin: 0;
-   padding: 0;
-   background: linear-gradient(to right, #e0eafc, #cfdef3);
-   color: #333;
-   text-align: center;
-   transition: all 0.3s ease-in-out;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
-/* Header with Glassmorphism Effect */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    color: #222;
+}
+
+/* Header */
 header {
-   background: rgba(51, 51, 51, 0.6);
-   backdrop-filter: blur(10px);
-   color: white;
-   padding: 1rem 0;
-   position: fixed;
-   width: 100%;
-   top: 0;
-   left: 0;
-   z-index: 1000;
-   transition: all 0.3s ease-in-out;
-   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
 }
 
-header.sticky {
-   background: rgba(51, 51, 51, 0.9);
+.nav__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
 }
 
-nav ul {
-   list-style: none;
-   padding: 0;
-   margin: 0;
-   display: flex;
-   justify-content: center;
+.nav__list li {
+    display: inline;
 }
 
-nav ul li {
-   margin: 0 20px;
+.nav__list a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
-nav ul li a {
-   color: white;
-   text-decoration: none;
-   font-weight: bold;
-   font-size: 18px;
-   transition: color 0.3s ease-in-out;
-   padding: 8px 15px;
-   border-radius: 8px;
-}
-
-nav ul li a:hover {
-   background: rgba(255, 255, 255, 0.2);
-   color: #FFD700;
+.nav__list a:hover {
+    color: #f39c12;
 }
 
 /* Sections */
-section {
-   padding: 100px 20px;
-   max-width: 900px;
-   margin: 120px auto;
-   background: white;
-   border-radius: 15px;
-   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-   transition: transform 0.3s ease-in-out;
+.section {
+    padding: 50px 0;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-section:hover {
-   transform: scale(1.02);
-}
-
-h2 {
-   font-size: 2.5rem;
-   margin-bottom: 20px;
-   color: #222;
-}
-
-p {
-   font-size: 1.2rem;
-   line-height: 1.8;
-}
-
-/* Skill Progress Bar with Animation */
-.skills {
-   text-align: left;
-   max-width: 600px;
-   margin: auto;
-}
-
+/* Skills Progress Bar */
 .skill {
-   margin: 15px 0;
-   font-weight: bold;
+    margin: 20px 0;
 }
 
 .progress-bar {
-   background: #ddd;
-   height: 12px;
-   border-radius: 6px;
-   overflow: hidden;
-   position: relative;
+    background-color: #ddd;
+    border-radius: 8px;
+    overflow: hidden;
 }
 
 .progress {
-   height: 100%;
-   background: linear-gradient(135deg, #0066ff, #0099ff);
-   text-align: right;
-   padding-right: 5px;
-   color: white;
-   font-size: 14px;
-   font-weight: bold;
-   line-height: 12px;
-   width: 0;
-   animation: fillProgress 2s forwards;
+    background: #f39c12;
+    text-align: center;
+    padding: 5px 0;
+    color: white;
+    font-weight: bold;
 }
 
-@keyframes fillProgress {
-   from { width: 0; }
-   to { width: 80%; }
+/* Project Cards */
+.project-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Contact Form with Modern Inputs */
-form {
-   max-width: 500px;
-   margin: auto;
+.project-card:hover {
+    transform: translateY(-5px);
 }
 
-input, textarea {
-   width: 100%;
-   padding: 12px;
-   margin: 10px 0;
-   border: 2px solid transparent;
-   border-radius: 8px;
-   font-size: 16px;
-   background: rgba(255, 255, 255, 0.9);
-   transition: all 0.3s ease-in-out;
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-input:focus, textarea:focus {
-   border-color: #0099ff;
-   outline: none;
-   box-shadow: 0 0 10px rgba(0, 153, 255, 0.5);
+#contact-form input, 
+#contact-form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-button {
-   padding: 14px 22px;
-   background: linear-gradient(135deg, #0066ff, #0099ff);
-   color: white;
-   border: none;
-   border-radius: 8px;
-   cursor: pointer;
-   font-size: 18px;
-   font-weight: bold;
-   transition: transform 0.2s ease-in-out;
+#contact-form button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
-button:hover {
-   transform: scale(1.05);
-   background: linear-gradient(135deg, #0044cc, #0077cc);
+#contact-form button:hover {
+    background-color: #e67e22;
 }
 
-/* Scroll-up Button */
-#scroll-up {
-   position: fixed;
-   bottom: 20px;
-   right: 20px;
-   background: #333;
-   color: white;
-   padding: 12px 18px;
-   border-radius: 50%;
-   font-size: 22px;
-   cursor: pointer;
-   display: none;
-   transition: all 0.3s ease-in-out;
-   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-#scroll-up.show {
-   display: block;
-}
-
-#scroll-up:hover {
-   background: #FFD700;
-   color: black;
-}
-
-/* Footer with Icons */
-footer {
-   background: #222;
-   color: white;
-   padding: 30px;
-   margin-top: 60px;
-   font-size: 14px;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   gap: 15px;
-}
-
-footer i {
-   font-size: 20px;
-   transition: transform 0.3s ease-in-out;
-}
-
-footer i:hover {
-   transform: scale(1.2);
-   color: #FFD700;
+/* Footer */
+.footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
 }
