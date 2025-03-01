@@ -58,7 +58,7 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Skills Progress Bar */
+/* Skill Progress Bar */
 .skill {
     margin: 20px 0;
 }
@@ -67,6 +67,8 @@ header {
     background-color: #ddd;
     border-radius: 8px;
     overflow: hidden;
+    height: 30px;
+    position: relative;
 }
 
 .progress {
@@ -75,6 +77,9 @@ header {
     padding: 5px 0;
     color: white;
     font-weight: bold;
+    height: 100%;
+    width: 0;
+    transition: width 1s ease-in-out;
 }
 
 /* Project Cards */
