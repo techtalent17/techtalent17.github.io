@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Form validation and handling
     const contactForm = document.getElementById('contact-form');
     const contactMessage = document.getElementById('contact-message');
-    
+
     // Form submission event listener
     contactForm.addEventListener('submit', (event) => {
         event.preventDefault(); // Prevents page reload
@@ -19,8 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // Here you can handle the form data, for example, sending it to a server.
-        // Simulating a successful submission.
+        // Simulating a successful submission
         contactMessage.textContent = `Thank you, ${name}! Your message has been sent.`;
         contactMessage.style.color = 'green';
 
@@ -30,7 +29,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Scroll animation effect for navigation links
     const navLinks = document.querySelectorAll('.nav__list a');
-
     navLinks.forEach(link => {
         link.addEventListener('click', (event) => {
             event.preventDefault();
@@ -44,4 +42,39 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     });
+
+    // Skill Progress Bar Animation
+    const skillsSection = document.getElementById('experience');
+    const skills = document.querySelectorAll('.skill');
+
+    // Function to animate progress bars
+    const animateSkills = () => {
+        skills.forEach(skill => {
+            const progressBar = skill.querySelector('.progress');
+            const skillValue = progressBar.getAttribute('data-skill');
+            let width = 0;
+
+            const interval = setInterval(() => {
+                if (width < skillValue) {
+                    width++;
+                    progressBar.style.width = `${width}%`;
+                    progressBar.textContent = `${width}%`;
+                } else {
+                    clearInterval(interval);
+                }
+            }, 10);
+        });
+    };
+
+    // Check if skills section is in view and animate progress bars
+    const checkIfInView = () => {
+        const rect = skillsSection.getBoundingClientRect();
+        if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+            animateSkills();
+            window.removeEventListener('scroll', checkIfInView);
+        }
+    };
+
+    window.addEventListener('scroll', checkIfInView);
+    checkIfInView(); // In case the section is already in view when the page loads
 });
