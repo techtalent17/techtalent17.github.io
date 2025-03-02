@@ -1,175 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Md. Al Amin | Software Engineer & Web Developer</title>
-   <link rel="stylesheet" href="style.css">
-   <script defer src="script.js"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Md. Al Amin Portfolio
+  * Template URL: https://techtalent17.github.io/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: Techtalent17
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body>
-   <!-- Header Section -->
-   <header id="header">
-      <div class="container">
-         <h1>Md. Al Amin</h1>
-         <nav>
-            <ul class="nav__list">
-               <li><a href="#about">About</a></li>
-               <li><a href="#experience">Experience</a></li>
-               <li><a href="#projects">Projects</a></li>
-               <li><a href="#contact">Contact</a></li>
-            </ul>
-         </nav>
+
+<body class="portfolio-details-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Md. Al Amin</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
       </div>
-   </header>
+    </div><!-- End Page Title -->
 
-   <!-- About Section -->
-   <section id="about" class="section">
-      <div class="container">
-         <h2>About Me</h2>
-         <p>🚀 Visionary Software Engineer | Full-Stack Innovator | AI & Cloud Architect. I'm a Software Engineer and Web Developer with expertise in full-stack development, AI, and cloud solutions.I design and develop scalable, high-performance digital solutions that drive innovation. With expertise in full-stack development, AI-powered automation, and cloud-native architectures, I create seamless, future-ready experiences. Passionate about leveraging AI, optimizing performance, and building intelligent systems, I transform complex challenges into elegant, efficient, and game-changing solutions.
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
 
-💡 Let's build the next-gen tech—faster, smarter, and more powerful. 🔥</p>
-      </div>
-   </section>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-   <!-- Experience Section -->
-   <section id="experience" class="section">
-      <div class="container">
-         <h2>My Skills & Experience</h2>
-         <div class="skills">
-            <div class="skill">
-               <h3>HTML & CSS</h3>
-               <div class="progress-bar">
-                  <div class="progress" style="width: 95%;">95%</div>
-               </div>
-            </div>
-            <div class="skill">
-               <h3>JavaScript</h3>
-               <div class="progress-bar">
-                  <div class="progress" style="width: 90%;">90%</div>
-               </div>
-            </div>
-            <div class="skill">
-               <h3>React & Node.js</h3>
-               <div class="progress-bar">
-                  <div class="progress" style="width: 85%;">85%</div>
-               </div>
-            </div>
-            <div class="skill">
-               <h3>Python & AI</h3>
-               <div class="progress-bar">
-                  <div class="progress" style="width: 85%;">85%</div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section>
+        <div class="row gy-4">
 
-   <!-- Projects Section -->
-   <section id="projects" class="section">
-      <div class="container">
-         <h2>Projects</h2>
-         <div class="project-card">
-            <h3>🧮 Calculator (Simple & Advanced)</h3>
-            <p>A functional calculator with basic and scientific modes.</p>
-            <ul>
-                <li><strong>Tech Used:</strong> HTML, CSS, JavaScript</li>
-                <li>✔ Basic arithmetic functions</li>
-                <li>✔ Dark/Light theme</li>
-                <li>✔ Scientific mode</li>
-            </ul>
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/app-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/product-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/branding-1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/books-1.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web design</li>
+                <li><strong>Client</strong>: ASU Company</li>
+                <li><strong>Project date</strong>: 01 March, 2020</li>
+                <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
+              <p>
+                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+              </p>
+            </div>
+          </div>
+
         </div>
-         
-        <div class="project-card">
-            <h3>🎓 Student Management System</h3>
-            <p>A simple student database system to add, edit, and remove students.</p>
-            <ul>
-                <li><strong>Tech Used:</strong> HTML, CSS, JavaScript (Node.js, PHP, Firebase)</li>
-                <li>✔ CRUD Operations (Create, Read, Update, Delete)</li>
-                <li>✔ Search students</li>
-                <li>✔ Export student data</li>
-            </ul>
-        </div>
-         
-         <div class="project-card">
-    <h3>🎮 Tic-Tac-Toe Game</h3>
-    <p>A fun two-player Tic-Tac-Toe game with a simple and interactive UI.</p>
-    <ul>
-        <li><strong>Tech Used:</strong> HTML, CSS, JavaScript</li>
-        <li>✔ Two-player mode (X vs. O)</li>
-        <li>✔ Win detection (Rows, Columns, Diagonals)</li>
-        <li>✔ Draw detection</li>
-        <li>✔ Restart game button</li>
-        <li>✔ Responsive design</li>
-    </ul>
-</div>
-         
-         <div class="project-card">
-            <h3>☁️ Weather App</h3>
-            <p>Fetch real-time weather data using an API.</p>
-            <ul>
-                <li><strong>Tech Used:</strong> HTML, CSS, JavaScript (Fetch API)</li>
-                <li>✔ Fetch weather data based on city</li>
-                <li>✔ Responsive UI</li>
-                <li>✔ Background changes based on weather</li>
-            </ul>
-        </div>
-         
-         <div class="project-card">
-    <h3>🛒 E-Commerce Product Page</h3>
-    <p>An interactive product page with cart functionality.</p>
-    <ul>
-        <li><strong>Tech Used:</strong> HTML, CSS, JavaScript</li>
-        <li>✔ Product filtering & search</li>
-        <li>✔ Add to cart functionality</li>
-        <li>✔ Responsive design</li>
-    </ul>
-</div>
-         
-         <div class="project-card">
-    <h3>🗞️ Blog CMS (Content Management System)</h3>
-    <p>A simple CMS for managing blog posts.</p>
-    <ul>
-        <li><strong>Tech Used:</strong> HTML, CSS, JavaScript (Can integrate with Firebase, Node.js, PHP)</li>
-        <li>✔ Create, Edit, and Delete blog posts</li>
-        <li>✔ Rich text editor</li>
-        <li>✔ Comment system</li>
-    </ul>
-</div>
-         
-         <div class="project-card">
-    <h3>💬 AI Chatbot</h3>
-    <p>A simple AI-powered chatbot for basic conversations.</p>
-    <ul>
-        <li><strong>Tech Used:</strong> HTML, CSS, JavaScript (NLP integration optional)</li>
-        <li>✔ Predefined chatbot responses</li>
-        <li>✔ AI-based reply learning</li>
-        <li>✔ Responsive chat UI</li>
-    </ul>
-</div>
-         
-   </section>
 
-   <!-- Contact Section -->
-   <section id="contact" class="section">
-      <div class="container">
-         <h2>Contact Me</h2>
-         <form id="contact-form">
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-         </form>
-         <p id="contact-message"></p>
       </div>
-   </section>
 
-   <!-- Footer -->
-   <footer class="footer">
-      <div class="container">
-         <p>&copy; 2025 Md. Al Amin. All Rights Reserved.</p>
+    </section><!-- /Portfolio Details Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
       </div>
-   </footer>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
